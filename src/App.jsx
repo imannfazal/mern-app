@@ -14,27 +14,30 @@ const router= createBrowserRouter([
   {
     path: '/',
     element: <HomeLayout />,
+    children:[
+      {
+        index: true,
+        element: <Landing />
+      },
+      {
+        path: 'error',
+        element: <Error />
+      },
+      {
+        path: 'register',
+        element: <Register />
+      },
+      {
+        path: 'dashboard',
+        element: <DashboardLayout />
+      },
+      {
+        path: 'login',
+        element: <Login />
+      },
+    ]
   },
-  {
-    path: '/landing',
-    element: <Landing />
-  },
-  {
-    path: '/error',
-    element: <Error />
-  },
-  {
-    path: '/register',
-    element: <Register />
-  },
-  {
-    path: '/dashboard',
-    element: <DashboardLayout />
-  },
-  {
-    path: '/login',
-    element: <Login />
-  },
+  
 ]);
 
 const App = () => {
