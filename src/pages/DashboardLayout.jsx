@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useContext, useState } from 'react';
 import Wrapper from '../assets/wrappers/Dashboard';
 import BigSideBar from '../components/BigSideBar';
 import SmallSideBar from '../components/SmallSideBar';
@@ -44,4 +44,4 @@ const DashboardLayout = () => {
 }
 
 export const useDashboardContext = useContext(DashboardContext);
-export default DashboardLayout
+export default DashboardLayout;
