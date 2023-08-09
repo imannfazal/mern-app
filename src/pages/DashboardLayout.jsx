@@ -1,11 +1,11 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { useState } from 'react';
 import Wrapper from '../assets/wrappers/Dashboard';
 import BigSideBar from '../components/BigSideBar';
 import SmallSideBar from '../components/SmallSideBar';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
-const DashboardContext = createContext();
+//const DashboardContext = createContext();
 
 const DashboardLayout = () => {
   //temp
@@ -26,7 +26,7 @@ const DashboardLayout = () => {
   }
 
   return (
-    <DashboardContext.Provider value={{user,showSidebar,isDarkTheme,toggleDarkTheme,toggleSidebar,logoutUser}}>
+
       <Wrapper>
         <main className="dashboard">
           <BigSideBar />
@@ -39,9 +39,9 @@ const DashboardLayout = () => {
           </div>
         </main>
       </Wrapper>
-    </DashboardContext.Provider>
+
   )
 }
 
-export const useDashboardContext = useContext(DashboardContext);
+//export const useDashboardContext = useContext(DashboardContext);
 export default DashboardLayout;

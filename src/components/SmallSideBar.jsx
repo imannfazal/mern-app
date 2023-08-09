@@ -1,10 +1,10 @@
 import React from 'react'
 import Wrapper from '../assets/wrappers/SmallSidebar'
-import { useDashboardContext } from '../pages/DashboardLayout'
+//import { useDashboardContext } from '../pages/DashboardLayout'
 
 const SmallSideBar = () => {
-    const data = useDashboardContext();
-    console.log(data);
+    //const data = useDashboardContext();
+    //console.log(data);
     return (
         <Wrapper>
             SmallSideBar
