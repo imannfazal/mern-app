@@ -32,7 +32,7 @@ const DashboardLayout = () => {
           <BigSideBar />
           <SmallSideBar />
           <div>
-            <Navbar />
+            <Navbar sidebar={toggleSidebar} />
             <div className="dashboard-page">
               <Outlet />
             </div>

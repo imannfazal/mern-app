@@ -3,11 +3,11 @@ import Wrapper from '../assets/wrappers/Navbar'
 import { FaAlignLeft } from 'react-icons/fa'
 import Logo from './Logo';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <Wrapper>
       <div className="nav-center">
-        <button type='button' className='toggle-btn'>
+        <button type='button' className='toggle-btn' onClick={props.sidebar}>
           <FaAlignLeft />
         </button>
         <div>
