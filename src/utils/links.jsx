@@ -10,5 +10,10 @@ const links = [
         text: 'add job',
         path: '.',
         icon: <FaWpforms />,
+    },
+    {
+        text: 'all jobs',
+        path: 'all-jobs',
+        icon: <MdAdminPanelSettings />,
     }
 ]
