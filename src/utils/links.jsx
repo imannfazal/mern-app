@@ -12,3 +12,4 @@ const links = [
     { text: 'profile', path: 'profile', icon: <ImProfile /> },
     { text: 'admin', path: 'admin', icon: <MdAdminPanelSettings /> },
 ];
+export default links;
