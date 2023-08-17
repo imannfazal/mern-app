@@ -11,8 +11,8 @@ const SmallSideBar = () => {
     //console.log(data);
     return (
         <Wrapper>
-            <div>
-                <button>
+            <div className='content'>
+                <button className='close-btn' type='button'>
                     <FaTimes />
                 </button>
                 <header>
@@ -23,7 +23,8 @@ const SmallSideBar = () => {
                         const {text, icon, path} = link;
                         return(
                             <NavLink to={path} key={text} >
-
+                                <span className='icon'>{icon}</span>
+                                {text}
                             </NavLink>
                         )
                     })}
