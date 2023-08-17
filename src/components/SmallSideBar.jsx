@@ -11,23 +11,25 @@ const SmallSideBar = () => {
     //console.log(data);
     return (
         <Wrapper>
-            <div className='content'>
-                <button className='close-btn' type='button'>
-                    <FaTimes />
-                </button>
-                <header>
-                    <Logo />
-                </header>
-                <div>
-                    {links.map((link)=>{
-                        const {text, icon, path} = link;
-                        return(
-                            <NavLink to={path} key={text} >
-                                <span className='icon'>{icon}</span>
-                                {text}
-                            </NavLink>
-                        )
-                    })}
+            <div className='sidebar-container show-sidebar'>
+                <div className='content'>
+                    <button className='close-btn' type='button'>
+                        <FaTimes />
+                    </button>
+                    <header>
+                        <Logo />
+                    </header>
+                    <div className='nav-links'>
+                        {links.map((link) => {
+                            const { text, icon, path } = link;
+                            return (
+                                <NavLink className='nav-link' to={path} key={text} >
+                                    <span className='icon'>{icon}</span>
+                                    {text}
+                                </NavLink>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </Wrapper>
